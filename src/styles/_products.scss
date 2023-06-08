@@ -1,0 +1,39 @@
+.products {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+  padding: 5em;
+}
+
+.productCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  .image-container {
+    width: 100%;
+    height: 100%;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .products-info {
+    height: 100%;
+  }
+  .price{
+    border-bottom: 1px solid #e8e8e8;
+  }
+  p {
+    margin: 0;
+  }
+  .products-name,
+  .products-desc,
+  .price {
+    margin-top: .5rem;
+  }
+  .products-desc {
+    color: #676767;
+  }
+}
